@@ -4,8 +4,11 @@ import AHouse from "../assets/Logo/AHouse.png";
 import S from "../assets/Logo/S.png";
 import A from "../assets/Logo/A.png";
 import Door from "../assets/Logo/door.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 function Header() {
+  const { pathname } = useLocation();
+  const lastWord = pathname.split("/").pop();
+  const className = lastWord === "error" ? "unline" : "";
   return (
     <nav>
       <ul className="navbar">
@@ -19,7 +22,9 @@ function Header() {
           </Link>
         </li>
         <li className="navlink">
-          <Link to="/">Accueil</Link>
+          <Link className={className} to="/">
+            Accueil
+          </Link>
           <Link to="/about" className="about">
             À propos
           </Link>

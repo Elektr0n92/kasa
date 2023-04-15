@@ -4,6 +4,16 @@
     gap: 5em;
 }
 
+
+.houseText{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 1em;
+    font-size: 18px;
+    color: #FFFFFF
+}
+
 .banner {
     width: 100%;
     height: 188px;
@@ -17,7 +27,7 @@
     color: white;
 }
 
-.houseBackground {
+.houseListBackground {
 
     background: #F7F7F7;
     border-radius: 25px;
@@ -38,4 +48,11 @@
     border-radius: 10px;
     width: 340px;
     height: 340px;
+    position: relative;
+}
+
+.houseCover{
+    object-fit: cover;
+    width: 100%;
+    filter: brightness(80%);
 }

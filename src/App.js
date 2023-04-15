@@ -1,4 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import Home from "./pages/Home";
 import { About } from "./pages/About";
 import Header from "./components/Header";
@@ -10,9 +15,10 @@ function App() {
       <div>
         <Header />
         <Routes>
+          <Route path="*" element={<Navigate to="/error" replace />} />
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="*" element={<Error />} />
+          <Route path="/error" element={<Error />} />
         </Routes>
       </div>
     </Router>
