@@ -1,0 +1,36 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo{
+  flex-grow: 1;
+}
+.door{
+    position: relative;
+    right: 15px;
+    bottom: 6px;
+}
+.navlink{
+    display: flex;
+    gap : 5em;
+}
+.about{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+li a{
+color: 
+    #FF6060;
+
+    font-size: 24px;
+}
+
+.unline{
+    text-decoration: none;
+}
+
