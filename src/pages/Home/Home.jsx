@@ -3,7 +3,7 @@ import data from "../../datas/houseList.json";
 import HouseItem from "../../components/HouseItem";
 function Home() {
   return (
-    <div className="home-container">
+    <>
       <div className="banner">
         <span className="text">Chez vous, partout et ailleurs !</span>
       </div>
@@ -14,7 +14,7 @@ function Home() {
           ))}
         </ul>
       </div>
-    </div>
+    </>
   );
 }
 

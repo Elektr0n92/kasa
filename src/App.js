@@ -13,18 +13,20 @@ import "./styles/style.css";
 
 function App() {
   return (
-    <Router>
-      <div className="page-container">
+    <>
+      <Router>
         <Header />
-        <Routes>
-          <Route path="*" element={<Navigate to="/error" replace />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/error" element={<Error />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+        <div className="page-container">
+          <Routes>
+            <Route path="*" element={<Navigate to="/error" replace />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/error" element={<Error />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </>
   );
 }
 
