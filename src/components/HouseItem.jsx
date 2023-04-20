@@ -1,4 +1,4 @@
-import "../pages/Home.css";
+import "../pages/Home/Home.css";
 import { Link } from "react-router-dom";
 function HouseItem({ id, title, cover, pictures, description }) {
   return (

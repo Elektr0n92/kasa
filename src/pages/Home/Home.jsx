@@ -1,6 +1,6 @@
 import "./Home.css";
-import data from "../datas/houseList.json";
-import HouseItem from "../components/HouseItem";
+import data from "../../datas/houseList.json";
+import HouseItem from "../../components/HouseItem";
 function Home() {
   return (
     <div className="home">
