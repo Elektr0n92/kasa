@@ -13,7 +13,7 @@ import "./styles/style.css";
 
 function App() {
   return (
-    <>
+    <div className="wrapper">
       <Router>
         <Header />
         <div className="page-container">
@@ -26,7 +26,7 @@ function App() {
           <Footer />
         </div>
       </Router>
-    </>
+    </div>
   );
 }
 
