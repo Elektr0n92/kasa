@@ -1,12 +1,13 @@
 import "./Home.css";
 import data from "../../datas/houseList.json";
 import HouseItem from "../../components/HouseItem";
+import Banner from "../../components/Banner";
 function Home() {
   return (
     <>
-      <div className="banner">
+      <Banner>
         <span className="text">Chez vous, partout et ailleurs !</span>
-      </div>
+      </Banner>
       <div className="houseListBackground">
         <ul className="houseList">
           {data.map((obj) => (
