@@ -1,9 +1,9 @@
 import "../styles/style.css";
-import K from "../assets/Logo/K.png";
-import AHouse from "../assets/Logo/AHouse.png";
-import S from "../assets/Logo/S.png";
-import A from "../assets/Logo/A.png";
-import Door from "../assets/Logo/door.png";
+import K from "../assets/Logo/Header/K.png";
+import AHouse from "../assets/Logo/Header/AHouse.png";
+import S from "../assets/Logo/Header/S.png";
+import A from "../assets/Logo/Header/A.png";
+import Door from "../assets/Logo/Header/door.png";
 import { Link, useLocation } from "react-router-dom";
 function Header() {
   const { pathname } = useLocation();
