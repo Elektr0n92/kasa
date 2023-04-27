@@ -23,7 +23,7 @@
     height: 220px;
     mix-blend-mode: darken;
     border-radius: 25px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Banner/bannerCover.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Banner/bannerCoverHome.png");
     background-size: cover;
     font-size: 48px;
     text-align: center;
