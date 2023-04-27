@@ -9,6 +9,7 @@ import { About } from "./pages/About";
 import Header from "./components/Header";
 import Error from "./pages/Error/Error";
 import Footer from "./components/Footer";
+import Product from "./pages/Product/Product";
 import "./styles/style.css";
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
             <Route path="*" element={<Navigate to="/error" replace />} />
             <Route path="/about" element={<About />} />
             <Route path="/error" element={<Error />} />
-            <Route path="/products/:productId" element={<div>blabla</div>} />
+            <Route path="/products/:productId" element={<Product />} />
           </Routes>
           <Footer />
         </div>
