@@ -18,10 +18,11 @@ function App() {
         <Header />
         <div className="page-container">
           <Routes>
-            <Route path="*" element={<Navigate to="/error" replace />} />
             <Route path="/" element={<Home />} />
+            <Route path="*" element={<Navigate to="/error" replace />} />
             <Route path="/about" element={<About />} />
             <Route path="/error" element={<Error />} />
+            <Route path="/products/:productId" element={<div>blabla</div>} />
           </Routes>
           <Footer />
         </div>

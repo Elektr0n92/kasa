@@ -1,0 +1,46 @@
+.page-container{
+    font-size: 24px;
+}
+.banner-about {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 220px;
+    mix-blend-mode: darken;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Banner/bannerCoverFooter.png");
+    background-size: cover;
+    font-size: 48px;
+    text-align: center;
+    color: white;
+
+}
+
+.collapse-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+}
+
+
+.collapse{
+    background-color:  #FF6060;
+    border-radius: 5px;
+    padding: 1em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapse-content{
+    background-color: #F7F7F7;
+    padding: 2em;
+    color: #FF6060;
+}
+
+.arrow-collapse{
+    cursor: pointer;
+}
