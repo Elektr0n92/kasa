@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import data from "../../datas/houseList.json";
-import Error from '../Error/Error'
-import HouseSingle from '../../components/HouseSingle'
+import Error from "../Error/Error";
+import HouseSingle from "../../components/HouseSingle";
 
 function Product() {
   const { productId } = useParams();
@@ -9,14 +9,13 @@ function Product() {
 
   if (!product) {
     // Si l'ID n'est pas valide, afficher une page d'erreur 404
-    return <Error/> ;
+    return <Error />;
   }
 
   return (
     <>
-    {data.map((item)=>
-      <HouseSingle {...item}/>)}
-  </>
-  )
+      <HouseSingle {...product} />
+    </>
+  );
 }
 export default Product;
