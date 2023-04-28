@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import data from "../../datas/houseList.json";
+import Error from '../Error/Error'
 
 function Product() {
   const { productId } = useParams();
@@ -7,7 +8,7 @@ function Product() {
 
   if (!product) {
     // Si l'ID n'est pas valide, afficher une page d'erreur 404
-    return <h1>404 - Page not found</h1>;
+    return <Error/> ;
   }
 
   return (
