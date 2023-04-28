@@ -1,4 +1,4 @@
-function HouseSingle (title, cover, pictures, description){
-
+function HouseSingle ({title}){
+    return (<h1>{title}</h1>)
 }
 export default HouseSingle

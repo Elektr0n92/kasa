@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import data from "../../datas/houseList.json";
 import Error from '../Error/Error'
+import HouseSingle from '../../components/HouseSingle'
 
 function Product() {
   const { productId } = useParams();
@@ -13,8 +14,9 @@ function Product() {
 
   return (
     <>
-      <h1>{productId}</h1>
-    </>
-  );
+    {data.map((item)=>
+      <HouseSingle {...item}/>)}
+  </>
+  )
 }
 export default Product;
