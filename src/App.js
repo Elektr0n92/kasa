@@ -20,10 +20,10 @@ function App() {
         <div className="page-container">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="*" element={<Navigate to="/error" replace />} />
             <Route path="/about" element={<About />} />
-            <Route path="/error" element={<Error />} />
+            <Route path="/404" element={<Error />} />
             <Route path="/products/:productId" element={<Product />} />
+            <Route path="*" element={<Navigate to="/404" replace />} />
           </Routes>
           <Footer />
         </div>

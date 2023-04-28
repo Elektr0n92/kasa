@@ -2,6 +2,7 @@ import "./Home.css";
 import data from "../../datas/houseList.json";
 import HouseItem from "../../components/HouseItem";
 import Banner from "../../components/Banner";
+
 function Home() {
   return (
     <>
@@ -10,9 +11,15 @@ function Home() {
       </Banner>
       <div className="houseListBackground">
         <ul className="houseList">
-          {data.map((obj) => (
-            <HouseItem key={obj.id} {...obj}></HouseItem>
-          ))}
+          {data.map((obj) => {
+            //console.log(obj.id);
+
+            const productUrl = `/products/${obj.id}`;
+
+            return (
+              <HouseItem key={obj.id} {...obj} url={productUrl}></HouseItem>
+            );
+          })}
         </ul>
       </div>
     </>
