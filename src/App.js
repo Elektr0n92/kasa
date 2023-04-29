@@ -10,12 +10,14 @@ import Header from "./components/Header";
 import Error from "./pages/Error/Error";
 import Footer from "./components/Footer";
 import Product from "./pages/Product/Product";
+import ScrollToTop from "./components/ScrollToTop";
 import "./styles/style.css";
 
 function App() {
   return (
     <div className="wrapper">
       <Router>
+        <ScrollToTop />
         <Header />
         <div className="page-container">
           <Routes>

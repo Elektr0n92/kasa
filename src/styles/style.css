@@ -81,4 +81,5 @@ color:
 .page-container>:not(.footer-container), .nav-container:not(.footer-container){
     max-width: 1440px;
     margin: auto;
+    width: 100%;
 }

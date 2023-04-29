@@ -1,0 +1,50 @@
+.slideshow {
+  display: flex;
+  position: relative;
+}
+
+.slideshow > img {
+    width: 100%;
+    object-fit: cover;
+    height: 20em;
+}
+
+.slideshow-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+.slideshow-index-container{
+    position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.slideshow-index{
+ 
+    color: white;
+    transform: translateX(-50%);
+}

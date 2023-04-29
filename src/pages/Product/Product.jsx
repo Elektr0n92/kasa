@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import "./Product.css";
 import data from "../../datas/houseList.json";
 import Error from "../Error/Error";
 import HouseSingle from "../../components/HouseSingle";
