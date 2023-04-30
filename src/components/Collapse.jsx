@@ -24,8 +24,8 @@ function Collapse({ data }) {
                 alt="arrow"
                 style={{
                   transform: collapseStates[index].isOpen
-                    ? ""
-                    : "rotate(180deg)",
+                    ? "rotate(180deg)"
+                    : "",
                 }}
               />
             </span>

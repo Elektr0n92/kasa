@@ -8,7 +8,7 @@ import { Link, useLocation } from "react-router-dom";
 function Header() {
   const { pathname } = useLocation();
   const lastWord = pathname.split("/").pop();
-  const className = lastWord === "error" ? "unline" : "";
+  const className = lastWord === "404" ? "unline" : "";
   return (
     <div className="nav-container">
       <nav>

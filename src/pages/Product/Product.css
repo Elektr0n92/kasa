@@ -61,6 +61,12 @@
 
 .product-label{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-label-info{
+  display: flex;
   flex-direction: column;
   gap: 10px;
 }
@@ -87,4 +93,10 @@
 .product-inform{
   display: flex;
   gap: 2em;
+}
+
+@media screen and (max-width: 800px) {
+  .product-inform{
+    flex-wrap: wrap;
+  }
 }

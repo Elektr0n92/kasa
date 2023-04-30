@@ -8,14 +8,22 @@ function HouseSingle(props) {
     <div className="product-container">
       <SlideShow alt={props.title} images={props.pictures} />
       <div className="product-label">
-        <div className="product-title">{props.title}</div>
-        <div className="product-location">{props.location}</div>
-        <div className="product-tag-list">
-          {props.tags.map((tag, index) => (
-            <li className="product-tag" key={tag + index}>
-              {tag}
-            </li>
-          ))}
+        <div className="product-label-info">
+          <div className="product-title">{props.title}</div>
+          <div className="product-location">{props.location}</div>
+          <div className="product-tag-list">
+            {props.tags.map((tag, index) => (
+              <li className="product-tag" key={tag + index}>
+                {tag}
+              </li>
+            ))}
+          </div>
+        </div>
+        <div className="product-host">
+          <div className="product-host-name">{props.host.name}</div>
+          <div className="product-host-picture">
+            <img src={props.host.picture} alt="hôte" />
+          </div>
         </div>
       </div>
       <div className="product-inform">
