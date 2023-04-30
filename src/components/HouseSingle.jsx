@@ -24,6 +24,7 @@ function HouseSingle(props) {
           <div className="product-host-picture">
             <img src={props.host.picture} alt="hôte" />
           </div>
+          <div className="product-host-rate">{props.rating}</div>
         </div>
       </div>
       <div className="product-inform">
