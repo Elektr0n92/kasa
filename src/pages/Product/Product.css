@@ -11,6 +11,7 @@
 
 .slideshow-controls {
   position: absolute;
+  margin: 0 1em;
   top: 0;
   left: 0;
   right: 0;
@@ -25,6 +26,7 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .arrow-left {
@@ -47,4 +49,54 @@
  
     color: white;
     transform: translateX(-50%);
+}
+
+.product-container{
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  color: #FF6060;
+  
+}
+
+.product-label{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product-label-info{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-title{
+  font-size: 2em;
+}
+
+.product-location{
+  margin-bottom: 1em;
+}
+.product-tag-list{
+  display: flex;
+  gap: 1em;
+  color: white;
+  flex-wrap: wrap;
+}
+.product-tag{
+  border-radius: 15px;
+  background: #FF6060;
+  padding: 6px 28px;
+}
+
+.product-inform{
+  display: flex;
+  gap: 2em;
+}
+
+@media screen and (max-width: 800px) {
+  .product-inform{
+    flex-wrap: wrap;
+  }
 }

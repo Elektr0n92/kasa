@@ -11,15 +11,23 @@ function Collapse({ data }) {
     <div className="collapse-list">
       {data.map((item, index) => (
         <div className="collapse-container" key={`MyCollapse_${index}`}>
-          <div className="collapse">
+          <div
+            className="collapse"
+            onClick={() =>
+              handleCollapseToggle(index, collapseStates, setCollapseStates)
+            }
+          >
             {item.title}
-            <span
-              className="arrow-collapse"
-              onClick={() =>
-                handleCollapseToggle(index, collapseStates, setCollapseStates)
-              }
-            >
-              <img src={Arrow} alt="arrow" />
+            <span className="arrow-collapse">
+              <img
+                src={Arrow}
+                alt="arrow"
+                style={{
+                  transform: collapseStates[index].isOpen
+                    ? "rotate(180deg)"
+                    : "",
+                }}
+              />
             </span>
           </div>
           <div

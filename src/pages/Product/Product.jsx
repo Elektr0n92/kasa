@@ -1,7 +1,6 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import "./Product.css";
 import data from "../../datas/houseList.json";
-import Error from "../Error/Error";
 import HouseSingle from "../../components/HouseSingle";
 
 function Product() {
@@ -10,7 +9,7 @@ function Product() {
 
   if (!product) {
     // Si l'ID n'est pas valide, afficher une page d'erreur 404
-    return <Error />;
+    return <Navigate to={"/404"} />;
   }
 
   return (
