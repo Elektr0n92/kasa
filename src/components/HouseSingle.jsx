@@ -5,14 +5,23 @@ function HouseSingle(props) {
   const equip = [{ title: "équipements", content: props.equipments }];
 
   return (
-    <>
+    <div className="product-container">
       <SlideShow alt={props.title} images={props.pictures} />
-      <div className="product-title">{props.title}</div>
-      <div className="product-location">{props.location}</div>
-      <div className="product-tags">{props.tags}</div>
+      <div className="product-label">
+        <div className="product-title">{props.title}</div>
+        <div className="product-location">{props.location}</div>
+        <div className="product-tag-list">
+          {props.tags.map((tag, index) => (
+            <li className="product-tag" key={tag + index}>
+              {tag}
+            </li>
+          ))}
+        </div>
+      </div>
       <Collapse data={description} />
       <Collapse data={equip} />
-    </>
+    </div>
   );
 }
 export default HouseSingle;
+//<div className="product-tags">{props.tags.join(" ")}</div>

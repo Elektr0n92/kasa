@@ -50,3 +50,35 @@
     color: white;
     transform: translateX(-50%);
 }
+
+.product-container{
+  display: flex;
+  gap: 2em;
+  flex-direction: column;
+  color: #FF6060;
+  
+}
+
+.product-label{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product-title{
+  font-size: 2em;
+}
+
+.product-location{
+  margin-bottom: 1em;
+}
+.product-tag-list{
+  display: flex;
+  gap: 1em;
+  color: white;
+}
+.product-tag{
+  border-radius: 15px;
+  background: #FF6060;
+  padding: 6px 28px;
+}
