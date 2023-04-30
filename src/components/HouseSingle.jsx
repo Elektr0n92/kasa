@@ -2,7 +2,7 @@ import Collapse from "../components/Collapse";
 import SlideShow from "../components/SlideShow";
 function HouseSingle(props) {
   const description = [{ title: "description", content: props.description }];
-  const equip = [{ title: "équipements", content: props.equipments }];
+  const equip = [{ title: "équipements", content: props.equipments.join(" ") }];
 
   return (
     <div className="product-container">
@@ -18,8 +18,10 @@ function HouseSingle(props) {
           ))}
         </div>
       </div>
-      <Collapse data={description} />
-      <Collapse data={equip} />
+      <div className="product-inform">
+        <Collapse data={description} />
+        <Collapse data={equip} />
+      </div>
     </div>
   );
 }

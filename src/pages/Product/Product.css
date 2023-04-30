@@ -76,9 +76,15 @@
   display: flex;
   gap: 1em;
   color: white;
+  flex-wrap: wrap;
 }
 .product-tag{
   border-radius: 15px;
   background: #FF6060;
   padding: 6px 28px;
+}
+
+.product-inform{
+  display: flex;
+  gap: 2em;
 }
