@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-height: 220px;
+    height: 220px;
     mix-blend-mode: darken;
     border-radius: 25px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Banner/bannerCoverHome.png");
@@ -28,9 +28,7 @@
     font-size: 48px;
     color: white;
 }
-.banner .text{
-    padding: 2em;
-}
+
 
 .houseListBackground {
 
@@ -75,6 +73,7 @@
 @media screen and (max-width: 1200px) {
     .banner{
       font-size: 1em;
+      height: 130px;
     }
   }
 
