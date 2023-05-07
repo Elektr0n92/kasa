@@ -97,10 +97,11 @@
 
 .rating-display{
   display: flex;
+  justify-content: space-between;
 }
 
 .star-pleine{
-  fill: red;
+  fill: #FF6060;
 }
 
 .star{
