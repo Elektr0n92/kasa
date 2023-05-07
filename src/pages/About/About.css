@@ -10,11 +10,12 @@
     height: 220px;
     mix-blend-mode: darken;
     border-radius: 25px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Banner/bannerCoverFooter.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Banner/bannerCoverAbout.png");
     background-size: cover;
     font-size: 48px;
     text-align: center;
     color: white;
+    min-width: 100px;
 
 }
 
@@ -33,6 +34,7 @@
     color: white;
     display: flex;
     justify-content: space-between;
+    font-size: clamp(1rem, 0.5rem + 1.5vw, 1.5rem)
 }
 
 .collapse-content{
@@ -44,3 +46,28 @@
 .arrow-collapse{
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+    .banner-about{
+      font-size: 1em;
+      height: 130px;
+    }
+
+    .collapse-content{
+        font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .banner-about{
+        height: 300px;
+        background-position: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Banner/bannerCoverAboutMobile.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .collapse-content{
+        font-size: 14px;
+    }
+  }

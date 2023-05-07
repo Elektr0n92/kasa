@@ -14,6 +14,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./styles/style.css";
 
 function App() {
+  const isGitHubPages = process.env.PUBLIC_URL !== "";
   return (
     <div className="wrapper">
       <Router>
@@ -25,7 +26,10 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/404" element={<Error />} />
             <Route path="/products/:productId" element={<Product />} />
-            <Route path="*" element={<Navigate to="/404" replace />} />
+            {isGitHubPages && (
+              <Route path="*" element={<Navigate to="/" replace />} />
+            )}
+            {!isGitHubPages && <Route path="*" element={<Error />} />}
           </Routes>
           <Footer />
         </div>

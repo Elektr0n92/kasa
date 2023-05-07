@@ -1,8 +1,8 @@
 .page-container{
     display: flex;
     flex-direction: column;
-    gap: 5em;
-    min-height: 100vh;
+    gap: 3em;
+    min-height: 95vh;
 }
 .navbar{
     display: flex;
@@ -36,7 +36,7 @@
 }
 .navlink{
     display: flex;
-    gap : 5em;
+    gap : clamp(1.5625rem, 0.7282rem + 2.6699vw, 5rem);
 }
 .about{
     text-decoration: none;
@@ -49,7 +49,7 @@ li a{
 color: 
     #FF6060;
 
-    font-size: 24px;
+    font-size: clamp(1rem, 0.5rem + 1.5vw, 1.5rem)
 }
 
 .unline{
@@ -83,3 +83,16 @@ color:
     margin: auto;
     width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+    .page-container{
+        font-size: 18px;
+    }
+  }
+
+@media screen and (max-width: 800px) {
+    .page-container{
+        gap: 1em;
+        font-size: 14px;
+    }
+  }

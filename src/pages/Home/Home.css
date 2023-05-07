@@ -11,7 +11,7 @@
     left: 0;
     bottom: 0;
     padding: 1em;
-    font-size: 18px;
+    font-size:clamp(14px, 7px + 1vw, 18px);
     color: #FFFFFF
 }
 
@@ -26,9 +26,9 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../../assets/Banner/bannerCoverHome.png");
     background-size: cover;
     font-size: 48px;
-    text-align: center;
     color: white;
 }
+
 
 .houseListBackground {
 
@@ -43,15 +43,24 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 2em;
+    padding: 2em 2em;
 }
 
 .houseItem {
     display: flex;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
-    border-radius: 10px;
-    max-width: 340px;
-    height: 340px;
+    height: 300px;
+    min-width: 300px;
     position: relative;
+    flex: 1 340px;
+}
+
+.houseItem,.houseCover{
+    border-radius: 10px;
+}
+
+.houseItem a{
+    width: 100%;
 }
 
 .houseCover{
@@ -60,3 +69,20 @@
     height: 100%;
     filter: brightness(80%);
 }
+
+@media screen and (max-width: 1200px) {
+    .banner{
+      font-size: 1em;
+      height: 130px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .banner{
+        justify-content: flex-start;
+    }
+
+    .houseList{
+        padding: 0 2em;
+    }
+  }
