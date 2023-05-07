@@ -1,5 +1,6 @@
 import Collapse from "../components/Collapse";
 import SlideShow from "../components/SlideShow";
+import Rating from "../components/Rating";
 function HouseSingle(props) {
   const description = [{ title: "description", content: props.description }];
   const equip = [{ title: "équipements", content: props.equipments.join(" ") }];
@@ -24,7 +25,9 @@ function HouseSingle(props) {
           <div className="product-host-picture">
             <img src={props.host.picture} alt="hôte" />
           </div>
-          <div className="product-host-rate">{props.rating}</div>
+          <div className="product-host-rate">
+            <Rating note={props.rating} />
+          </div>
         </div>
       </div>
       <div className="product-inform">
