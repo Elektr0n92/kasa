@@ -1,8 +1,9 @@
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
   Navigate,
+  HashRouter,
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import { About } from "./pages/About";
@@ -15,6 +16,8 @@ import "./styles/style.css";
 
 function App() {
   const isGitHubPages = process.env.PUBLIC_URL !== "";
+  const Router = isGitHubPages ? HashRouter : BrowserRouter;
+
   return (
     <div className="wrapper">
       <Router>
