@@ -63,6 +63,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 1em;
 }
 
 .product-label-info{
@@ -119,14 +120,42 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 7px;
+}
+
+.product-host-name{
+  width: min-content;
+}
+
+.product-host-picture{
+  flex: 1;
 }
 
 .product-host-picture img{
   border-radius: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 800px) {
   .product-inform{
     flex-wrap: wrap;
+  }
+
+  .product-label{
+    flex-direction: column;
+  }
+
+  .product-host{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-host-picture img{
+    width: 6em;
+  }
+  
+  .arrow-left img, .arrow-right img{
+    width: 1em;
   }
 }
