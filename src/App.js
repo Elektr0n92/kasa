@@ -15,8 +15,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./styles/style.css";
 
 function App() {
+  const isDevelopment = process.env.NODE_ENV === "development";
   const isGitHubPages = process.env.PUBLIC_URL !== "";
-  const Router = isGitHubPages ? HashRouter : BrowserRouter;
+  const Router = isDevelopment ? BrowserRouter : HashRouter;
 
   return (
     <div className="wrapper">
