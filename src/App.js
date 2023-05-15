@@ -2,7 +2,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Navigate,
+  //Navigate,
   HashRouter,
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
@@ -16,7 +16,7 @@ import "./styles/style.css";
 
 function App() {
   const isDevelopment = process.env.NODE_ENV === "development";
-  const isGitHubPages = process.env.PUBLIC_URL !== "";
+  //const isGitHubPages = process.env.PUBLIC_URL !== "";
   const Router = isDevelopment ? BrowserRouter : HashRouter;
 
   return (
@@ -30,10 +30,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/404" element={<Error />} />
             <Route path="/products/:productId" element={<Product />} />
-            {isGitHubPages && (
-              <Route path="*" element={<Navigate to="/" replace />} />
-            )}
-            {!isGitHubPages && <Route path="*" element={<Error />} />}
+            <Route path="*" element={<Error />} />
           </Routes>
           <Footer />
         </div>
